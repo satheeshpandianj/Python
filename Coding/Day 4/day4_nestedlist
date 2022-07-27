@@ -1,0 +1,4 @@
+fruits = ["apple","grapes","banana"]
+vegetables = ["carrot","cabbage"]
+provisions = [fruits, vegetables]
+print(provisions[0][1])
