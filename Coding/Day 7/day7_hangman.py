@@ -10,6 +10,7 @@
 # import the modules
 
 import random
+import os
 from day7_hangman_wordlist import word_list
 from day7_hangman_art import stages, logo
 
@@ -38,7 +39,7 @@ end_of_game = False
 while not end_of_game:
     guess = input("Guess a letter : ")
     guess = guess.lower() # convert user input into lower case
-
+    os.system("clear")
     count = 0 # To store how many times the user input letter checked against the random word at a time
     
     for position in range(len(chosen_word)):   
