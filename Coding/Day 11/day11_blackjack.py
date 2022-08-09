@@ -104,13 +104,13 @@ def play_game():
         if user_score == computer_score:
             return "Draw"
         elif computer_score == 0:
-            return "You lose, You opponent has a blackjack"
+            return "You lose, Your opponent has a blackjack"
         elif user_score == 0:
             return "You win, You have a blackjack"
         elif user_score > 21:
-            return "You lose, you have crossed 21"
+            return "You lose, your have crossed 21"
         elif computer_score > 21:
-            return "You win, You opponent has crossed 21"
+            return "You win, Your opponent has crossed 21"
         elif user_score > computer_score:
             return "You win"
         else:
